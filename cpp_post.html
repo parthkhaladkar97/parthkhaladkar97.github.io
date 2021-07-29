@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C++QuickStart</title>
+
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+
+
+
+
+        <link href="https://fonts.googleapis.com/
+        css2?family=Russo+One&display=swap" rel="stylesheet">
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Robo
+        to+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+
+
+
+
+
+        <link rel="stylesheet"  type="text/css" href="default.css">
+       
+
+        <link id="theme-style" rel="stylesheet"  type="text/css" href="">
+
+
+
+        <style>
+            code {
+              font-family:'Roboto Mono', monospace;
+              color:#fff;
+              background-color:#15202B;
+              padding: 2px;
+              font-size: 105%;
+             
+            }
+            </style>
+
+
+
+
+
+
+       
+  
+    </head>
+    <body>
+
+
+        <!--<div class="nav-wrapper">
+            <div class="dots-wrapper">
+                <div id="dot1" class="browser-dot"></div>
+                <div id="dot2" class="browser-dot"></div>
+                <div id="dot3" class="browser-dot"></div>
+                
+            </div>
+
+
+            
+           
+        </div>//-->
+        <section class="s1">
+
+        <div class="main-container">
+            <h5 style="text-align: center;line-height: 0;">Choose Theme</h5>
+
+            <div id="theme-options-wrapper">
+                <div data-mode="light" id="lightmode" class="theme-dot"></div>
+                <div data-mode="dark" id="darkmode" class="theme-dot"></div>
+               <!-- <div data-mode="green" id="greenmode" class="theme-dot"></div>
+                <div data-mode="purple" id="purplemode" class="theme-dot"></div>-->
+            </div>
+
+            
+
+           
+
+
+
+
+
+
+            <h2>QuickStart To C++</h2>
+            <p>It is a general purpose programming language created as an extension to
+               the C language.It has object oriented,functional and generic support which
+               makes it more powerful and flexible.It was developed by Bjarne Stroustrup.
+               This QuickStart will give you a quick peek into various programming constructs
+               and get you up to date with the basics.<br><br>
+               Note that this is not a complete tutorial and the aim  is to just get you started
+               into the programming world.
+
+            </p>
+
+            <p><b>Note:</b>This guide does not include the procedure to install c++.However if you are on a mac you can start using 
+            c++ via Xcode Apple's integrated development environment for macOS.You can download Xcode via the App Store.
+                <br>
+                <br>
+            You can also use the various online c++ compilers for running the programs given in this QuickStart.Though
+            it is recommended that you install c++ on your machines.
+            </p>
+            <p>
+                <b>Some Online C++ Compliers</b>
+                <ul>
+                    <li><a  target="_blank" href="https://www.onlinegdb.com/online_c++_compiler">Onlinegdb</a></li>
+                </ul>
+            </p>
+            <br>
+            <p>Now that you are set up , lets's start !!</p>
+
+
+
+
+            <div class="dropdown">
+                <h3></h3>
+                <button style="font-family: 'Russo One', sans-serif;"class="dropbtn">Table Of Contents</button>
+                <div class="dropdown-content">
+                    <a style="font-family: 'Roboto Mono', monospace;" href="#featuresofcpp">1. C++ Features</a>
+                    <a style="font-family: 'Roboto Mono', monospace;" href="#executingcode">2. Executing Code</a>
+                    <a style="font-family: 'Roboto Mono', monospace;" href="#hellosection">3. First Program</a>
+                    <a style="font-family: 'Roboto Mono', monospace;" href="#var">4. Variables in C++</a>
+                    <a style="font-family: 'Roboto Mono', monospace;" href="#math">5. Arithmeric Operations</a>
+                    <a style="font-family: 'Roboto Mono', monospace;" href="#looping">6. Loops and Conditionals</a>
+                    <a style="font-family: 'Roboto Mono', monospace;" href="#fun">7. Introduction to Functions</a>
+  
+                </div>
+              </div>
+
+
+
+           
+
+
+
+
+            
+
+
+           
+            </div>
+        </section>
+
+
+<!-------------------->
+
+       
+
+<!----------------------->
+
+      
+
+
+
+
+            <section class="s2">
+                <div class="main-container">
+                    <h3 id="featuresofcpp">Features of C++</h3>
+                    <ul>
+                        <li><b>Object Oriented: </b> Supports Encapsulation,Inheritance,Polymorphism</li>
+                        <li><b>Case Sensitive: </b>  CODE and code are different</li>
+                        <li><b>Dynamic Memory Allocation:</b>  Variables are given heap space dynamically</li>
+                        <li><b>Compiler Based </b></li>
+                    </ul>
+
+                </div>
+               </section>
+
+
+            
+
+
+
+
+
+            <section class="s1">
+                <div class="main-container">
+
+
+                    
+
+
+                    
+
+            <h3 id="executingcode">Executing C++ Code</h3>
+            <p>For those who have installed c++ on their machines and will be using a terminal to run 
+                programs.<br>
+                C++ Programs can be written on any text editor and saved as a file having a file having a
+                <b>.cpp</b> extension.
+            </p>
+           
+            <ul>
+                <li><b>Step 1</b>  Open terminal/Cmd.</li>
+                <li><b>Step 2</b>  Change the Directory to the one in which you have your program file with .cpp extension<br>
+                    <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <code> < Your Directory ></code>  </li><br>
+                <li><b>Step 3</b>  Now enter the following to compile the file using g++<br>
+                    <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code> g++ filename.cpp -o anyname</filename></code> </li><br>
+                <li><b>Step 4</b>  Finally Run the program by<br>
+                    <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>./anyname</code> </li><br></li>
+            </ul>
+        </div>
+
+        </section>
+
+        <section class="s2">
+            <div class="main-container">
+
+            <h3 id="hellosection">Simple HelloWorld Program</h3>
+            <p>Now Let's Start with our first simple Program</p>
+            <p>Type the following into your editor and after saving the file run it in the terminal as instructed above </p>
+            <img id="hello" src="images/Helloprg.png"><br><br>
+
+            <ul>
+                <li><b>Line 1</b>  Pound  # signs are called directives which are processed by the preprocessor.The <b> #include</b> tells the complier to include the standard
+                iostream(stands for input-output stream)file. </li><br>
+                <li><b>Line 2</b> <b>using namespace std</b> means to include the entire std namespace into the current namespace of the program.
+                    Using namespace, you can define the context in which names are defined. In short, a namespace defines a scope. 
+                     </li><br>
+                <li><b>Line 4</b>  Every c++ program must have a main function as the execution of the program starts from the main function.
+                    The Line declares a main function which returns integer type data. A function is group of code statements which perform a certain task.
+                   </li><br>
+                <li><b>{ }</b>  These curly parenthesis specify the start or end of the fuction or construct body.Your code should be between these brackets.<br>
+                   </li><br>
+                <li><b>Line 6   cout<<""</b> This displays the message on the output window usually dektop screen.String messages should be enclosed in " ". A 
+                    Semi-Colon(;) is used to indicate the end of a statement.</li><br>
+
+                <li><b>Line 8</b> This statement is used to return a value from a function.Usually used in functions to return final computed 
+                    results from the operations the respective function performs.
+                    </li><br>
+                </ul> 
+
+            </div>
+                </section>
+
+            </section>
+
+            <section class="s1">
+                <div class="main-container">
+
+                <h3 id="variables">C++ Variables and Escape Sequences</h3>
+                <p>In programming variable is placeholder to store some data.To help identify it each variable should be given an unique name and 
+                    should be assigned proper data-type(int, float, bool,string etc).</p>
+                <p>Escape Sequences are characters that have special meaning of function in c++ like newline,tab spacing, commenting etc.</p>
+                <img id="var" src="images/variables.png"><br><br>
+                <p>As you can see in the code above the value of a varible can be changed, hence called variabbles.Above we changed the value of 
+                    varible a from 10 to 15.As you can see <b>int</b> holds integer type data, <b>float</b> holds decimal/fractional values. 
+                    <br><br>
+                    Check out some datatypes in c++ for yourself.
+                    <br><br>
+                    You will also be seeing some escape sequences like \n, \\ , \* *\ in the snippet.The Following will explain them.
+
+                    <ul>
+                        <li><b>\n</b>  New Line.</li><br>
+                        <li><b>\t</b>  Horizontal tab</li><br>
+                       
+                        <li><b>\0</b>  Null Character<br> </li><br>
+                        <li><b>\v</b>  Vertical tab<br> </li><br>
+                        <li><b>\0</b>  Null Character<br> </li><br>
+
+                   
+                    </ul>
+                    <p>Check out some escape sequences  for yourself.</p> 
+                    
+                    
+
+                    
+
+        
+                </p>
+
+
+                
+
+            </div>
+        </section>
+
+            <section class="s2">
+                <div class="main-container">
+                    <h3 id="math">Basic Input/Output And Basic Arithmertic operations</h3>
+                    <p>We already know the use of <b>cout</b> to print output to screen.Now lets see how to accept input from the user.</p>
+                    <img id="input" src="images/Input.png">
+                    <p>In the above we took input from the user using <b>>></b> operator with<b> cin</b></p>
+                    <p>Try Taking different types of data as input say strings or floats.</p>
+
+                    <p><b>Arithmertic operations</b></p>
+                    <p>These are used to perform Arithmertic operartions on data</p>
+                    <img id="operator"  src="images/Operators.png" >
+                    <p><b>Note that as we are using integers 5/2 will be 2 ,use floating point numbers to get decimals.  </b></p>
+                </div>
+            </section>
+
+            <section class="s1">
+                <div class="main-container">
+                    <h3 id="looping">Loops and Conditionals</h3>
+                    <p>Conditional branching and looping is an integral part of any programming language</p>
+                    <ul>
+                        <li><h5> if , if..else , if..else if..else</h5>
+                        <p>The <b>if</b> statement is used to run a part of code only if a particular condition is met.</p>
+                        <p>The Syntax is as follows</p>
+                        <code>
+                            if(condition)<br>
+                            {<br>
+                                &emsp;&emsp;execute this<br>
+                            }<br>
+                        </code>
+                        <p>The if statement can also have an optional else clause</p>
+                        <p>The Syntax is as follows</p>
+                        <code>
+                            if(condition)<br>
+                            {<br>
+                                &emsp;&emsp;execute this<br>
+                            }<br>
+                            else<br>{<br>
+                                &emsp;&emsp;do this<br>
+                            }<br>
+                        </code>
+                        <p>However if we need to make a choice between more than two cases we can use if..else if..else</p>
+                        <p>The Syntax is as follows</p>
+                        <code>
+                            if(conditon)<br>
+                            {<br>
+                                &emsp;&emsp;execute this<br>
+                            }<br>
+                            else if(condition2)<br>{<br>
+                                &emsp;&emsp;then execute that <br>
+                            }<br>
+                            else <br>{<br>
+                                &emsp;&emsp;do this<br>
+                            }<br>
+
+                            
+                        </code><br><br>
+                        <p>Refer the sample code below for referece</p>
+                        <img id="if-else" src="images/Ifelse.png"><br><br>
+                        <b>INPUT: 2 </b><br>
+                        <b>OUTPUT: Number is greater than zero</b><br><br>
+
+                        <b>INPUT: 0 </b><br>
+                        <b>OUTPUT: Number is equal to zero</b><br><br>
+                        <br>
+                        <p>Its a self explanatory program where in we check whether a number is greater than , less than , or equal to zero and print repectively.</p>
+                    </li>
+                        
+                    <li><h5>for loop</h5>
+                        <p>The for loop is used to repeat a part of code for n times</p>
+                        <p>The syntax for the for loop is</p><br>
+                        <code>
+                            for(initialization, conditon, increment/decrement)<br>
+                            {<br>
+                                &emsp;&emsp;code to be repeated<br>
+                            }<br>
+                        </code>
+                        <p><b>Initialization</b> initializes the loop varible, executed once.</p>
+                        <p><b>condition</b> if true then loop body executed else loop gets terminated.</p> 
+                        <p><b>increment/decrement</b> updates the value of loop variable and again checks condition</p>
+                        <p>The Following for loop prints nos from 0 to 9</p>
+                        <img id=for-loop src="images/for.png"><br><br>
+                        <b>OUTPUT: 012346789</b><br><br>
+                        
+                        </li>
+
+                    <li><h5>while loop</h5>
+                        <p>It checks a condition, if the condition is true then it executes the code block.Then again the condition is checked for And
+                            the process contiues.When the condition evaluates to false the loop terminates.</p>
+                            <p>The Syntax is as follows</p>
+                        <code>
+                            while(condition)<br>
+                            {<br>
+                                &emsp;&emsp;execute this<br>
+
+                            }<br>
+                        </code>
+                        <p>The Following loop will print nos from 0 to 7</p>
+                        <img id="while-loop" src="images/while.png"><br><br>
+                        <b>OUTPUT: 0123467</b><br><br>
+
+                    </li>
+
+                    <li><h5>do..while</h5>
+                        <p>The do..while loop is a special variant of the while loop , where in the body of the loop is executed first and then
+                            the codition is checked.<br></p>
+                            <p>The Syntax is as follows</p>
+                            <code>
+                                do<br>
+                                {<br>
+                                    &emsp;&emsp;execute this<br>
+
+                                }<br>
+                                while(condition)<br>
+                            </code><br>
+                            <img id="do-while" src="images/dowhile.png"><br>
+                            <b>OUTPUT: 1011121314151617181920</b><br><br>
+                            <p>The Above code will print nos from 10 to 20 after which the conditon becomes false and it terminates.</p>                
+                    </li>
+
+                    <li><h5>break , continue</h5>
+                    <p>The <b>break</b> statement terminates the loop when it is encountered.</p>
+                    <img id= "breakcode" src="images/break.png"><br><br>
+                    <b>OUTPUT: 01234</b><br><br>
+                    <p>The above loop terminates as soon as the value of the iteration variable becomes 5</p><br><br>
+                    </li>
+
+                    <li>The <b>continue</b> statement skips the current iteration and goes on to execute the next<br><br>
+                    <img id="contiuecode" src="images/continue.png" ><br><br>
+                    <b>OUTPUT: 012346789</b><br><br>
+                    </li>
+                </ul>
+
+
+
+
+
+                </div>
+            </section>
+
+            <section class="s2">
+                <div class="main-container">
+                    <h3 id="fun">Functions</h3>
+                    <p>Fuctions are blocks of code that perform a specified task.There are 2 main types of fuctions in c++</p>
+                    <ul>
+                        <li><b>Std Library functions</b>  These are predefined in c++</li>
+                        <li><b>User defined functions</b> writtern by users</li>
+
+                        <p>In this section we will only focus on the basics of user defined functios</p>
+                    </ul>
+                    
+                    <p>The syntax of defining a function is</p><br>
+                    <code>
+                        returntype functionname(parameter1, parameter2)<br>
+                        {<br>
+                            &emsp;&emsp;code to  be executed<br>
+                        }<br>
+                    </code>
+
+                        <p>For start lets rewrite our helloworld program in form of a function</p><br>
+                        <img id="function1" src="images/function1.png"><br><br>
+                        
+                        <b>OUTPUT: Hello World</b><br>
+                        <p>In the above program we have created a function named printmsg()and we are calling it through our main function.
+                          As the function is not returning anything the return type is void, also as we are not passing any parameters there are no
+                          parameters given. </p><br>
+
+                        <p>Now lets look at another example with a return value and parameter passing.</p><br>
+                        <img id="function2" src="images/function2.png"><br><br>
+                        <b>INPUT: 10 20 </b><br>
+                        <b>OUTPUT: 30</b><br>
+                        <p>In the above code snippet we are taking two nos from the user and passing them to our addnos()function.
+                            This function inturn adds them up and returns the integer result which we get in our ans variable.
+                        </p>
+
+
+
+
+                    
+
+                </div>
+
+            </section> 
+
+
+           
+
+                
+
+
+
+
+        
+
+       
+
+
+
+            <script type="text/JavaScript" src="theme.js"></script>
+
+        
+
+    </body> 
+</html>
+
+
+<!-----
+    <a style="font-family: 'Roboto Mono', monospace;" href="#featuresofcpp">C++ Features</a>
+                  <a style="font-family: 'Roboto Mono', monospace;" href="#executingcode">Executing Code</a>
+                  <a style="font-family: 'Roboto Mono', monospace;" href="#hellosection">First Program</a>
+                  <a style="font-family: 'Roboto Mono', monospace;" href="#var">Variables in C++</a>
+                  <a style="font-family: 'Roboto Mono', monospace;" href="#math">Arithmeric Operations</a>
+                  <a style="font-family: 'Roboto Mono', monospace;" href="#looping">Loops and Conditionals</a>
+                  <a style="font-family: 'Roboto Mono', monospace;" href="#fun">Introduction to Functions</a>
+
+
+
+
+-->

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Authentication System</title>
+
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+
+
+
+
+        <link href="https://fonts.googleapis.com/
+        css2?family=Russo+One&display=swap" rel="stylesheet">
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Robo
+        to+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+
+
+
+
+
+        <link rel="stylesheet"  type="text/css" href="default.css">
+       
+
+        <link id="theme-style" rel="stylesheet"  type="text/css" href="">
+
+
+
+        
+
+
+
+
+
+
+       
+  
+    </head>
+    <body>
+
+
+        <!--<div class="nav-wrapper">
+            <div class="dots-wrapper">
+                <div id="dot1" class="browser-dot"></div>
+                <div id="dot2" class="browser-dot"></div>
+                <div id="dot3" class="browser-dot"></div>
+                
+            </div>
+
+
+            
+           
+        </div>//-->
+        <section class="s1">
+
+        <div class="main-container">
+            <h5 style="text-align: center;line-height: 0;">Choose Theme</h5>
+
+            <div id="theme-options-wrapper">
+                <div data-mode="light" id="lightmode" class="theme-dot"></div>
+                <div data-mode="dark" id="darkmode" class="theme-dot"></div>
+               <!-- <div data-mode="green" id="greenmode" class="theme-dot"></div>
+                <div data-mode="purple" id="purplemode" class="theme-dot"></div>-->
+            </div>
+
+
+
+            <h2>Dynamic Authentication by 'Risk Level Analysis Based User Profiling' Using Machine Learning&emsp;:</h2><br>
+            <br>
+            <div>
+                <img src="images/Parth.png" style=" float: left;margin: 5px;height:40px"/>
+            <p><b>Parth Khaladkar<br>May 7 2019</b></p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="s2">
+        <div class="main-container">
+            <br>
+            <br>
+            <p>This was the project I created back in the final year of my undergrad studies.This was a group project.The system aims to  
+            analyse and learn from user behaviour patterns to reduce the probabiliy of unwarranted access.<br><br>
+            A user login record is analyzed using eight user parameters(Browser, OS, Time, IP, Device, FailedAttempts, Location, Timezone) which are collected during current login attempt.Each
+            parameter has a respective weight attached to it based on it's importance.<br><br>A user is profiled according to his historical patterns and classified as genuine or fradulent 
+            before logging in using login credentials and attributes. These attributes are analyzed using Machine Learning 
+            model consisting of three trained modules through which risk level is calculated and used to determine the 
+            authentication techniques in different combinations for a particular user.<br><br>
+            So if a current record has parameters which do not resemble the profile the risk score will get incremented in accordance to respective weight of the parameter.
+            Use of three algorithms increases accuracy of classification. So, a fradulent user will have to go through multiple
+            generated set of authentication techniques (like OTPs, Email Verification, Graphical password, pattern match)while a genuine one will not.
+
+                
+            </p><br><br>
+            <h3>Technologies Used</h3>
+            <ul>
+                <li><b>Python</b></li>
+                <li><b>Django</b></li>
+                <li><b>SQlite</b></li>
+                <li><b>Javascript</b></li>
+                <li><b>HTML/CSS</b></li>
+            </ul>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="s1">
+        <div class="main-container">
+            <h3>System Diagram</h3>
+            <img id="sysarch" src="images/SysArch.PNG"><br><br>
+            <p>The system consists of three main modules</p>
+            <ul>
+                <li><b>Data Generation Module&emsp;:</b><br>
+                    This includes user account creation(Take in initial user entered credentials), parameter extraction, data preprocessing, fetchingg user history and updating the dataset with current 
+                    login parameters. 
+                </li><br>
+                <li><b>Risk Engine&emsp;:</b><br>
+                    This contains the main buisness logic.It works on the user dataset and computes the probability and risk score. It has three  machine learning
+                     algorithms<br>
+                     &emsp;&emsp;1.SVM (Support Vector Machine)<br>
+                     &emsp;&emsp;2.One Class SVM<br>
+                     &emsp;&emsp;3.Naive-Bayes classifier<br>
+
+
+
+                </li><br>
+                <li><b>Authentication Module&emsp;:</b><br>
+                    The authentication module with the help of the risk score by one-class SVM and probabilities of being fraud by SVM and Naive-Bayes' classifier computes the risk level,
+                 randomly presents the user with the authentication methods. The user thus gets classified according to the risk level he is assigned into. One to Four signifies risk threat 
+                 or probability of the user being fradulent from minimum to maximum.
+                </li><br>
+                
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="main-container">
+            <h3>Flow Chart</h3>
+            <img id="flowchart" src="images/FlowChart.PNG" alt="">
+        </div>
+    </section>
+
+
+    <section class="s1">
+        <div class="main-container">
+            <h3>View Project Paper:&emsp;&emsp;<a target="_blank" href="https://www.ijrat.org/downloads/Conference_Proceedings/ICATESM-2019/icatesm-D21.pdf">View</a></h3>
+            
+        </div>
+    </section>
+
+
+
+
+
+    <script type="text/JavaScript" src="theme.js"></script>
+
+
+</body> 
+</html>
+
